@@ -1,5 +1,4 @@
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-  console.log("Message received: ", message);
   // 2. A page requested user data, respond with a copy of `user`
   if (message.time) {
     chrome.history.search(
